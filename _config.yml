@@ -1,0 +1,23 @@
+title: Dash VPN
+description: Smart Routing for Outline Servers
+url: https://dash.goodappwork.com
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: en
+  - scope:
+      path: "zh"
+    values:
+      lang: zh

@@ -2,8 +2,6 @@
 title: Privacy Policy
 ---
 
-<div class="content">
-
 # Privacy Policy
 
 **Last updated: February 2025**
@@ -47,6 +45,4 @@ You have complete control over your data:
 
 ## Contact
 
-If you have questions about this privacy policy, please open an issue on our [GitHub repository](https://github.com/nickelsh1ts/dash-vpn.github.io/issues).
-
-</div>
+If you have questions about this privacy policy, please open an issue on our [GitHub repository](https://github.com/dash-vpn/dash-vpn.github.io/issues).

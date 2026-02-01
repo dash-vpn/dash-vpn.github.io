@@ -2,8 +2,6 @@
 title: Support
 ---
 
-<div class="content">
-
 # Support
 
 Welcome to Dash VPN support. Find answers to common questions below.
@@ -76,6 +74,4 @@ No. Dash VPN does not collect, log, or transmit any of your traffic or personal 
 
 ## Contact
 
-Need more help? Open an issue on our [GitHub repository](https://github.com/nickelsh1ts/dash-vpn.github.io/issues).
-
-</div>
+Need more help? Open an issue on our [GitHub repository](https://github.com/dash-vpn/dash-vpn.github.io/issues).

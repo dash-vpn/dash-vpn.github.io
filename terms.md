@@ -2,8 +2,6 @@
 title: Terms of Service
 ---
 
-<div class="content">
-
 # Terms of Service
 
 **Last updated: February 2025**
@@ -52,6 +50,4 @@ We may update these terms from time to time. Continued use of the app after chan
 
 ## Contact
 
-If you have questions about these terms, please open an issue on our [GitHub repository](https://github.com/nickelsh1ts/dash-vpn.github.io/issues).
-
-</div>
+If you have questions about these terms, please open an issue on our [GitHub repository](https://github.com/dash-vpn/dash-vpn.github.io/issues).

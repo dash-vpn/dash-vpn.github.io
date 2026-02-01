@@ -3,8 +3,6 @@ title: 隐私政策
 lang: zh
 ---
 
-<div class="content">
-
 # 隐私政策
 
 **最后更新：2025 年 2 月**
@@ -48,6 +46,4 @@ Dash VPN 进行的唯一网络连接是：
 
 ## 联系我们
 
-如果您对本隐私政策有疑问，请在我们的 [GitHub 仓库](https://github.com/nickelsh1ts/dash-vpn.github.io/issues)提交问题。
-
-</div>
+如果您对本隐私政策有疑问，请在我们的 [GitHub 仓库](https://github.com/dash-vpn/dash-vpn.github.io/issues)提交问题。

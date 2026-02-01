@@ -3,8 +3,6 @@ title: 帮助
 lang: zh
 ---
 
-<div class="content">
-
 # 帮助中心
 
 欢迎来到 Dash VPN 帮助中心，以下是常见问题解答。
@@ -77,6 +75,4 @@ Dash VPN 提供三种路由模式：
 
 ## 联系我们
 
-需要更多帮助？请在我们的 [GitHub 仓库](https://github.com/nickelsh1ts/dash-vpn.github.io/issues)提交问题。
-
-</div>
+需要更多帮助？请在我们的 [GitHub 仓库](https://github.com/dash-vpn/dash-vpn.github.io/issues)提交问题。

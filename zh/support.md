@@ -75,4 +75,4 @@ Dash VPN 提供三种路由模式：
 
 ## 联系我们
 
-需要更多帮助？请在我们的 [GitHub 仓库](https://github.com/dash-vpn/dash-vpn.github.io/issues)提交问题。
+需要更多帮助？请在我们的 [GitHub 仓库](https://github.com/dash-vpn/dash-vpn.github.io/issues)提交问题，或发送邮件至 <a class="email-link" data-user="sam" data-domain="getdashvpn.com">sam@getdashvpn.com</a>。

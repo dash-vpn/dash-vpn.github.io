@@ -74,4 +74,4 @@ No. Dash VPN does not collect, log, or transmit any of your traffic or personal 
 
 ## Contact
 
-Need more help? Open an issue on our [GitHub repository](https://github.com/dash-vpn/dash-vpn.github.io/issues), or email us at <a class="email-link" data-user="sam" data-domain="getdashvpn.com">sam@getdashvpn.com</a>.
+{% include contact.html %}

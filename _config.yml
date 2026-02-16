@@ -6,6 +6,12 @@ baseurl: ""
 markdown: kramdown
 highlighter: rouge
 
+app:
+  ios_id: "6758854900"
+  macos_id: "6758860923"
+  ios_url: "https://apps.apple.com/app/id6758854900"
+  macos_url: "https://apps.apple.com/app/id6758860923"
+
 exclude:
   - README.md
   - Gemfile

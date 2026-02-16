@@ -50,4 +50,4 @@ We may update these terms from time to time. Continued use of the app after chan
 
 ## Contact
 
-If you have questions about these terms, please open an issue on our [GitHub repository](https://github.com/dash-vpn/dash-vpn.github.io/issues).
+{% include contact.html %}

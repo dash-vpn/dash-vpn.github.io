@@ -6,43 +6,35 @@ title: Privacy Policy
 
 **Last updated: February 2025**
 
-Dash VPN is committed to protecting your privacy. This policy explains how we handle your data.
+Dash VPN is a privacy-focused application. We do not collect, store, or sell your data.
 
-## Data We Don't Collect
+## 1. Zero-Logs Policy
 
-Dash VPN does **not** collect, store, or transmit:
+We fundamentally respect your privacy. Dash VPN does **NOT** collect or store:
 
-- Your VPN traffic or browsing history
-- Your IP address or location
-- Personal information or identifiers
-- Usage analytics or telemetry
-- Server credentials you enter
+- **Your Network Traffic:** We do not log browsing history, traffic destination, data content, or DNS queries.
+- **Your IP Address:** We do not collect or store your original IP address.
+- **Connection Data:** We do not log session durations or connection timestamps.
 
-## How the App Works
+## 2. Data stored on your device
 
-Dash VPN is a client application that connects to Outline servers you configure. All server credentials are stored locally on your device using the system keychain.
+Dash VPN functions entirely as a client on your device.
 
-- **Server credentials** are stored securely in your device's keychain
-- **Routing rules** are stored locally on your device
-- **No data** is sent to our servers because we don't operate any servers
+- **Server Credentials:** Your server configurations are stored securely in your device's Keychain. We have no access to them.
+- **Routing Rules:** Stored locally within the app.
 
-## Third-Party Services
+## 3. Diagnostic Data (Anonymous)
 
-The only network connections made by Dash VPN are:
+To improve app stability, we collect **anonymous** crash reports (via Sentry) only when the app malfunctions.
 
-1. To the Outline servers you configure
-2. To Apple's App Store for license verification
+- **What is sent:** Device model (e.g., iPhone 15), iOS version, and the technical error that caused the crash.
+- **What is NOT sent:** No personal information, no traffic data, and **no IP addresses**.
+- **Opt-Out:** You can disable this in the application settings at any time.
 
-We do not use any third-party analytics, advertising, or tracking services.
+## 4. User Support
 
-## Your Control
-
-You have complete control over your data:
-
-- Delete server configurations at any time
-- Uninstall the app to remove all local data
-- No account required to use the app
+If you contact us for support (e.g., via email), we will only use the information you voluntarily provide to assist you. We do not share this information with third parties.
 
 ## Contact
 
-If you have questions about this privacy policy, please open an issue on our [GitHub repository](https://github.com/dash-vpn/dash-vpn.github.io/issues).
+{% include contact.html %}

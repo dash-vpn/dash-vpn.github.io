@@ -51,4 +51,4 @@ Dash VPN 按"原样"提供，不提供任何形式的保证。我们不保证：
 
 ## 联系我们
 
-如果您对这些条款有疑问，请在我们的 [GitHub 仓库](https://github.com/dash-vpn/dash-vpn.github.io/issues)提交问题。
+{% include contact.html %}

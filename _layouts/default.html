@@ -7,6 +7,15 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  {% if page.lang == 'zh' %}
+  <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ page.url }}" />
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | remove: '/zh' }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url | remove: '/zh' }}" />
+  {% else %}
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}" />
+  <link rel="alternate" hreflang="zh" href="{{ site.url }}/zh{{ page.url }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}" />
+  {% endif %}
 </head>
 <body>
   <header>
@@ -40,7 +49,7 @@
         <a href="/zh/support">常见问题</a>
         <a class="email-link" data-user="sam" data-domain="getdashvpn.com">联系我们</a>
       </nav>
-      <p class="copyright">© 2026 Hangzhou Dash Network Software Co., Ltd. All rights reserved.</p>
+      <p class="copyright">© 2026 Dash Network Software Co., Ltd. All rights reserved.</p>
       {% else %}
       <nav class="footer-nav">
         <a href="/privacy">Privacy</a>
@@ -48,7 +57,7 @@
         <a href="/support">FAQ</a>
         <a class="email-link" data-user="sam" data-domain="getdashvpn.com">Support</a>
       </nav>
-      <p class="copyright">© 2026 Hangzhou Dash Network Software Co., Ltd. All rights reserved.</p>
+      <p class="copyright">© 2026 Dash Network Software Co., Ltd. All rights reserved.</p>
       {% endif %}
     </div>
   </footer>
@@ -56,6 +65,22 @@
 document.querySelectorAll('.email-link').forEach(function(el) {
   var u = el.dataset.user, d = el.dataset.domain;
   el.href = 'mailto:' + u + '@' + d;
+});
+
+(function() {
+  var path = window.location.pathname;
+  if (path.startsWith('/zh') || localStorage.getItem('lang_override')) return;
+  var lang = navigator.language || navigator.userLanguage;
+  if (lang && lang.startsWith('zh')) {
+    var zhPath = '/zh' + (path === '/' ? '/' : path);
+    window.location.replace(zhPath);
+  }
+})();
+
+document.querySelectorAll('.lang-switch').forEach(function(el) {
+  el.addEventListener('click', function() {
+    localStorage.setItem('lang_override', 'true');
+  });
 });
 </script>
 </body>

@@ -1,6 +1,7 @@
 ---
 title: 帮助
 lang: zh
+toc: true
 ---
 
 # 帮助中心
@@ -67,7 +68,7 @@ Dash VPN 提供三种路由模式：
 
 ### Dash VPN 和 Outline 是一样的吗？
 
-不是。Dash VPN 是独立的客户端应用，与 Jigsaw 或官方 Outline 应用没有关联。Dash VPN 添加了官方 Outline 客户端没有的智能路由模式等功能。
+不是。Dash VPN 是独立的客户端应用，与 Outline Foundation 或官方 Outline 应用没有关联。Dash VPN 添加了官方 Outline 客户端没有的智能路由模式等功能。
 
 ### Dash VPN 会记录我的流量吗？
 

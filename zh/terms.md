@@ -13,7 +13,7 @@ lang: zh
 
 Dash VPN 是一个独立应用，提供连接 Outline VPN 服务器的客户端界面。
 
-**重要声明：** Dash VPN 与 Jigsaw 或 Outline 项目没有任何关联、背书或合作关系。Outline 是 Jigsaw LLC 的商标。
+**重要声明：** Dash VPN 与 Outline Foundation 或 Outline 项目没有任何关联、背书或合作关系。Outline 是 Outline Foundation 的商标。
 
 ## 您的责任
 

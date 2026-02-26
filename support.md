@@ -1,5 +1,6 @@
 ---
 title: Support
+toc: true
 ---
 
 # Support
@@ -66,7 +67,7 @@ No. Dash VPN only works with Outline servers using the Shadowsocks protocol.
 
 ### Is Dash VPN the same as Outline?
 
-No. Dash VPN is an independent client app. It's not affiliated with Jigsaw or the official Outline apps. Dash VPN adds features like smart routing modes that aren't in the official Outline client.
+No. Dash VPN is an independent client app. It's not affiliated with the Outline Foundation or the official Outline apps. Dash VPN adds features like smart routing modes that aren't in the official Outline client.
 
 ### Does Dash VPN log my traffic?
 

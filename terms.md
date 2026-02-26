@@ -12,7 +12,7 @@ By using Dash VPN, you agree to these terms.
 
 Dash VPN is an independent application that provides a client interface for connecting to Outline VPN servers.
 
-**Important:** Dash VPN is not affiliated with, endorsed by, or connected to Jigsaw or the Outline project. Outline is a trademark of Jigsaw LLC.
+**Important:** Dash VPN is not affiliated with, endorsed by, or connected to the Outline Foundation or the Outline project. Outline is a trademark of Outline Foundation.
 
 ## Your Responsibilities
 

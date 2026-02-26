@@ -4,22 +4,18 @@ title: Home
 
 <div class="hero">
   <div class="hero-info">
-    <img src="/assets/images/icon.png" alt="Dash VPN" class="hero-icon">
     <h1>Dash for Outline</h1>
     <p class="tagline">Smart VPN Client for Outline Servers</p>
     <p class="subtitle">Smart routing, split tunneling, ad blocking, and custom rules—<br>all built for your Outline server on macOS and iOS.</p>
     <div class="hero-actions">
       <div class="app-store-buttons">
         <a href="{{ site.app.macos_url }}" class="app-store-btn">
-          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us" alt="Download on the Mac App Store">
-        </a>
-        <a href="{{ site.app.ios_url }}" class="app-store-btn">
-          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us" alt="Download on the App Store">
+          <img src="/assets/images/download-on-the-app-store-en.svg" alt="Download on the App Store">
         </a>
       </div>
       <div class="powered-by">
         <img src="/assets/images/outline-logo.png" alt="Outline">
-        <span>Powered by Outline</span>
+        <span>Powered by <a href="https://getoutline.org" target="_blank">Outline</a><br>A free, open-source VPN by <a href="https://getoutline.org" target="_blank">Outline Foundation</a>. Not affiliated.</span>
       </div>
     </div>
   </div>
@@ -36,19 +32,11 @@ title: Home
   </div>
 </div>
 
-<div class="outline-intro">
-  <h2>What is Outline?</h2>
-  <div class="outline-intro-content">
-    <img src="/assets/images/outline-logo.png" alt="Outline" class="outline-logo">
-    <div>
-      <p><a href="https://getoutline.org" target="_blank">Outline</a> is a free, open-source tool created by <a href="https://jigsaw.google.com" target="_blank">Jigsaw</a> (a subsidiary of Google) that lets anyone run their own VPN server. It's designed to be simple to set up and resistant to blocking.</p>
-    </div>
-  </div>
-</div>
 
-<div class="section">
-  <h2>Why Dash?</h2>
+<div class="section" id="features">
+  <h2>Features</h2>
 
+  <!-- Primary feature card: Smart Routing, full width, two-column body -->
   <div class="feature-card feature-card-primary">
     <div class="feature-card-header">
       <div class="feature-icon">
@@ -57,9 +45,18 @@ title: Home
       <h3>Smart Routing</h3>
     </div>
     <p>Built-in GeoSite domain rules automatically distinguish domestic and international traffic. Access local sites directly while routing international sites through Outline—no manual switching needed.</p>
-
-    <div class="sub-features">
-      <div class="sub-feature">
+    <div class="feature-card-body">
+      <div class="feature-card-media">
+        <div class="platform-tabs" data-group="smart-routing">
+          <button class="tab-btn active" data-tab="mac">Mac</button>
+          <button class="tab-btn" data-tab="ios">iOS</button>
+        </div>
+        <div class="tab-content">
+          <img class="tab-img active" data-tab="mac" src="/assets/images/macos_rule.png" alt="Smart Routing on macOS" onclick="openLightbox(this.src)">
+          <img class="tab-img" data-tab="ios" src="/assets/images/ios_home_en_framed.jpg" alt="Smart Routing on iOS" onclick="openLightbox(this.src)">
+        </div>
+      </div>
+      <div class="feature-card-details">
         <h4>Three Routing Modes</h4>
         <div class="mode-list">
           <div class="mode-item">
@@ -76,60 +73,45 @@ title: Home
           </div>
         </div>
       </div>
-      <div class="sub-feature">
-        <h4>Ad Blocking</h4>
-        <p>Block ad domains at the network layer, covering all system traffic:</p>
-        <ul>
-          <li><strong>YouTube Ad Blocking</strong> — Reduce video pre-roll ads</li>
-          <li><strong>Spotify Ad Blocking</strong> — Skip audio interruption ads</li>
-        </ul>
-        <p class="feature-detail">No browser extensions needed. Works across all apps.</p>
-      </div>
-    </div>
-
-    <div class="platform-tabs" data-group="smart-routing">
-      <button class="tab-btn active" data-tab="mac">Mac</button>
-      <button class="tab-btn" data-tab="ios">iOS</button>
-    </div>
-    <div class="tab-content">
-      <img class="tab-img active" data-tab="mac" src="/assets/images/macos_rule.png" alt="Smart Routing on macOS" onclick="openLightbox(this.src)">
-      <img class="tab-img" data-tab="ios" src="/assets/images/ios_home_en_framed.jpg" alt="Smart Routing on iOS" onclick="openLightbox(this.src)">
     </div>
   </div>
 
-  <div class="feature-card">
-    <div class="feature-card-header">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+  <!-- Secondary feature cards: two-column side by side -->
+  <div class="feature-cards-grid">
+    <div class="feature-card">
+      <div class="feature-card-header">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Real-time Traffic</h3>
       </div>
-      <h3>Real-time Traffic</h3>
+      <p>Monitor connections in real-time. See which domains are proxied, which go direct, and which are blocked.</p>
+      <div class="platform-tabs" data-group="traffic">
+        <button class="tab-btn active" data-tab="mac">Mac</button>
+        <button class="tab-btn" data-tab="ios">iOS</button>
+      </div>
+      <div class="tab-content">
+        <img class="tab-img active" data-tab="mac" src="/assets/images/macos_traffic.png" alt="Traffic Monitor on macOS" onclick="openLightbox(this.src)">
+        <img class="tab-img" data-tab="ios" src="/assets/images/ios_traffic_en_framed.jpg" alt="Traffic Monitor on iOS" onclick="openLightbox(this.src)">
+      </div>
     </div>
-    <p>Monitor connections in real-time. See which domains are proxied, which go direct, and which are blocked.</p>
-    <div class="platform-tabs" data-group="traffic">
-      <button class="tab-btn active" data-tab="mac">Mac</button>
-      <button class="tab-btn" data-tab="ios">iOS</button>
-    </div>
-    <div class="tab-content">
-      <img class="tab-img active" data-tab="mac" src="/assets/images/macos_traffic.png" alt="Traffic Monitor on macOS" onclick="openLightbox(this.src)">
-      <img class="tab-img" data-tab="ios" src="/assets/images/ios_traffic_en_framed.jpg" alt="Traffic Monitor on iOS" onclick="openLightbox(this.src)">
-    </div>
-  </div>
 
-  <div class="feature-card">
-    <div class="feature-card-header">
-      <div class="feature-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+    <div class="feature-card">
+      <div class="feature-card-header">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <h3>Fully Outline Compatible</h3>
       </div>
-      <h3>Fully Outline Compatible</h3>
-    </div>
-    <p>Use your existing Outline server and access key—just paste and connect. Supports standard Shadowsocks and WebSocket transport protocols. No server-side configuration changes required.</p>
-    <div class="tab-content">
-      <img class="tab-img active" src="/assets/images/macos_account.png" alt="Server Management on macOS" onclick="openLightbox(this.src)">
+      <p>Use your existing Outline server and access key—just paste and connect. Supports standard Shadowsocks and WebSocket transport protocols. No server-side configuration changes required.</p>
+      <div class="tab-content">
+        <img class="tab-img active" src="/assets/images/macos_account.png" alt="Server Management on macOS" onclick="openLightbox(this.src)">
+      </div>
     </div>
   </div>
 </div>
 
-<div class="section">
+<div class="section" id="comparison">
   <h2>Comparison</h2>
   <div class="comparison-table-wrapper">
     <table class="comparison-table">

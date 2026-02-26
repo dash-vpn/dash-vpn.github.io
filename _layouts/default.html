@@ -26,9 +26,13 @@
       </a>
       <div class="nav-links">
         {% if page.lang == 'zh' %}
+        <a href="/zh/#features" class="nav-anchor">介绍</a>
+        <a href="/zh/#comparison" class="nav-anchor">对比</a>
         <a href="/zh/support">帮助</a>
         <a href="/" class="lang-switch">EN</a>
         {% else %}
+        <a href="/#features" class="nav-anchor">Features</a>
+        <a href="/#comparison" class="nav-anchor">Compare</a>
         <a href="/support">Support</a>
         <a href="/zh/" class="lang-switch">中文</a>
         {% endif %}
@@ -37,7 +41,21 @@
   </header>
 
   <main>
+    {% if page.toc %}
+    <div class="doc-layout">
+      <div class="doc-content">
+        {{ content }}
+      </div>
+      <aside class="doc-toc">
+        <div class="toc-inner">
+          <p class="toc-label">{% if page.lang == 'zh' %}本页目录{% else %}On This Page{% endif %}</p>
+          <nav id="toc-nav"></nav>
+        </div>
+      </aside>
+    </div>
+    {% else %}
     {{ content }}
+    {% endif %}
   </main>
 
   <footer>
@@ -82,6 +100,41 @@ document.querySelectorAll('.lang-switch').forEach(function(el) {
     localStorage.setItem('lang_override', 'true');
   });
 });
+
+(function() {
+  var nav = document.getElementById('toc-nav');
+  if (!nav) return;
+  var content = document.querySelector('.doc-content');
+  if (!content) return;
+  var headings = content.querySelectorAll('h2, h3');
+  if (!headings.length) return;
+
+  var ul = document.createElement('ul');
+  headings.forEach(function(h) {
+    var li = document.createElement('li');
+    li.className = h.tagName.toLowerCase();
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent.replace(/\p{Emoji_Presentation}/gu, '').trim();
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+  nav.appendChild(ul);
+
+  var links = nav.querySelectorAll('a');
+  function setActive() {
+    var scrollY = window.scrollY + 100;
+    var current = '';
+    headings.forEach(function(h) {
+      if (h.offsetTop <= scrollY) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('toc-active', a.getAttribute('href') === '#' + current);
+    });
+  }
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+})();
 </script>
 </body>
 </html>

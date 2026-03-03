@@ -8,15 +8,6 @@
   --border: #E5E7EB;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #F9FAFB;
-    --text-secondary: #9CA3AF;
-    --bg: #111827;
-    --bg-secondary: #1F2937;
-    --border: #374151;
-  }
-}
 
 * {
   margin: 0;

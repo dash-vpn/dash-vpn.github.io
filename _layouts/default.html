@@ -7,6 +7,15 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RX8K1D8FWP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RX8K1D8FWP');
+  </script>
   {% if page.lang == 'zh' %}
   <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ page.url }}" />
   <link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url | remove: '/zh' }}" />

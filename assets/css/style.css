@@ -257,17 +257,41 @@ main {
 
 .powered-by {
   display: inline-flex;
-  align-items: flex-start;
-  gap: 0.4rem;
+  flex-direction: column;
+  gap: 0.25rem;
   font-size: 0.78rem;
   color: var(--text-secondary);
   line-height: 1.6;
 }
 
-.powered-by img {
+.powered-by-logos {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.powered-by-logos a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.powered-by-logos a:hover {
+  color: var(--accent);
+}
+
+.powered-by-logos img {
   width: 16px;
   height: 16px;
   opacity: 0.7;
+}
+
+.powered-by-sep {
+  color: var(--text-secondary);
+  opacity: 0.4;
 }
 
 .powered-by a {

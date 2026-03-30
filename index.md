@@ -4,9 +4,9 @@ title: Home
 
 <div class="hero">
   <div class="hero-info">
-    <h1>Dash for Outline</h1>
-    <p class="tagline">Smart VPN Client for Outline Servers</p>
-    <p class="subtitle">Smart routing, split tunneling, ad blocking, and custom rules—<br>all built for your Outline server on macOS and iOS.</p>
+    <h1>Dash VPN</h1>
+    <p class="tagline">Smart VPN Client for Outline / Vless / V2Ray / Singbox</p>
+    <p class="subtitle">Smart routing, split tunneling, ad blocking, and custom rules—<br>supporting multiple protocols on macOS and iOS for a more flexible experience.</p>
     <div class="hero-actions">
       <div class="app-store-buttons">
         <a href="{{ site.app.macos_url }}" class="app-store-btn">
@@ -14,8 +14,12 @@ title: Home
         </a>
       </div>
       <div class="powered-by">
-        <img src="/assets/images/outline-logo.png" alt="Outline">
-        <span>Powered by <a href="https://getoutline.org" target="_blank">Outline</a><br>A free, open-source VPN by <a href="https://getoutline.org" target="_blank">Outline Foundation</a>. Not affiliated.</span>
+        <div class="powered-by-logos">
+          <a href="https://getoutline.org" target="_blank"><img src="/assets/images/outline-logo.png" alt="Outline">Outline</a>
+          <span class="powered-by-sep">·</span>
+          <a href="https://github.com/SagerNet/sing-box" target="_blank"><img src="https://sing-box.sagernet.org/assets/icon.svg" alt="sing-box">sing-box</a>
+        </div>
+        <span>Powered by open source. Not affiliated.</span>
       </div>
     </div>
   </div>
@@ -101,9 +105,9 @@ title: Home
         <div class="feature-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         </div>
-        <h3>Fully Outline Compatible</h3>
+        <h3>Extensive Protocol Support</h3>
       </div>
-      <p>Use your existing Outline server and access key—just paste and connect. Supports standard Shadowsocks and WebSocket transport protocols. No server-side configuration changes required.</p>
+      <p>· Supports Outline, Vless, Shadowsocks, Trojan, and VMess protocols<br>· Supports HTTPS subscriptions, including data traffic quotas and expiration info from the server</p>
       <div class="tab-content">
         <img class="tab-img active" src="/assets/images/macos_account.png" alt="Server Management on macOS" onclick="openLightbox(this.src)">
       </div>
@@ -119,13 +123,23 @@ title: Home
         <tr>
           <th>Feature</th>
           <th>Outline Official Client</th>
-          <th>Dash for Outline</th>
+          <th>Dash VPN</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Connect to Outline servers</td>
           <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>Multi-protocol (Vless/SS/Trojan/VMess)</td>
+          <td class="cross">✗</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>HTTPS subscriptions</td>
+          <td class="cross">✗</td>
           <td class="check">✓</td>
         </tr>
         <tr>

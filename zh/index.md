@@ -5,9 +5,9 @@ lang: zh
 
 <div class="hero">
   <div class="hero-info">
-    <h1>Dash for Outline</h1>
-    <p class="tagline">专为 Outline 服务器打造的智能 VPN 客户端</p>
-    <p class="subtitle">智能分流、广告拦截、自定义规则——<br>macOS 与 iOS 双平台，让你的 Outline 服务器发挥全部实力。</p>
+    <h1>Dash VPN</h1>
+    <p class="tagline">专为 Outline / Vless / V2Ray / Singbox 打造的智能客户端</p>
+    <p class="subtitle">智能分流、广告拦截、自定义规则——<br>macOS 与 iOS 双平台，支持多种主流协议，网络体验更灵活高效。</p>
     <div class="hero-actions">
       <div class="app-store-buttons">
         <a href="{{ site.app.macos_url }}" class="app-store-btn">
@@ -15,8 +15,12 @@ lang: zh
         </a>
       </div>
       <div class="powered-by">
-        <img src="/assets/images/outline-logo.png" alt="Outline">
-        <span>由 <a href="https://getoutline.org" target="_blank">Outline</a> 提供支持<br><a href="https://getoutline.org" target="_blank">Outline Foundation</a> 的免费开源 VPN 工具，本产品与其无关。</span>
+        <div class="powered-by-logos">
+          <a href="https://getoutline.org" target="_blank"><img src="/assets/images/outline-logo.png" alt="Outline">Outline</a>
+          <span class="powered-by-sep">·</span>
+          <a href="https://github.com/SagerNet/sing-box" target="_blank"><img src="https://sing-box.sagernet.org/assets/icon.svg" alt="sing-box">sing-box</a>
+        </div>
+        <span>基于开源技术，与上述项目无关。</span>
       </div>
     </div>
   </div>
@@ -102,9 +106,9 @@ lang: zh
         <div class="feature-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         </div>
-        <h3>完全兼容 Outline</h3>
+        <h3>多协议支持</h3>
       </div>
-      <p>使用你现有的 Outline 服务器和 access key，粘贴即用。支持标准 Shadowsocks 及 WebSocket 传输协议。不需要修改服务端任何配置。</p>
+      <p>· 支持 Outline、Vless、Shadowsocks、Trojan、VMess 协议<br>· 支持 HTTPS 订阅，可显示服务器返回的流量配额和到期时间信息</p>
       <div class="tab-content">
         <img class="tab-img active" src="/assets/images/macos_account.png" alt="macOS 服务器管理" onclick="openLightbox(this.src)">
       </div>
@@ -120,13 +124,23 @@ lang: zh
         <tr>
           <th>功能</th>
           <th>Outline 官方客户端</th>
-          <th>Dash for Outline</th>
+          <th>Dash VPN</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>连接 Outline 服务器</td>
           <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>多协议 (Vless/SS/Trojan/VMess)</td>
+          <td class="cross">✗</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td>HTTPS 订阅</td>
+          <td class="cross">✗</td>
           <td class="check">✓</td>
         </tr>
         <tr>
